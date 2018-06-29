@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mural</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="quadro" ondrop="drop(event)" ondragover="permitirDrop(event)">
+            <div class="card card1" id="card1" draggable="true" ondragstart="drag(event)"></div>
+            <div class="card card2" id="card2" draggable="true" ondragstart="drag(event)"></div>
+            <div class="card card3" id="card3" draggable="true" ondragstart="drag(event)"></div>
+        </div>
+        <div class="quadro" ondrop="copy(event)" ondragover="permitirDrop(event)"></div>
+    </div>
+    <div ondrop="deletar(event)" ondragover="permitirDrop(event)">
+        <img src="lixo.png" id="lixo">
+    </div>
+</body>
+</html>
